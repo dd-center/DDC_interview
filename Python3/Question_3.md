@@ -23,7 +23,7 @@ copy_iter = iter(copy.deepcopy(my_test))
 del my_test[0]
 ```
 
-```
+```python3
 >>> print(next(iter(my_test)))
 2
 >>> print(next(iterator))

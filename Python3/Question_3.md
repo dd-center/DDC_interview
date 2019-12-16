@@ -17,6 +17,7 @@ copy_iter = iter(copy.deepcopy(my_test))
 1
 >>> print(next(iterator))
 2
+```
 
 ```python3
 del my_test[0]

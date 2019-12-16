@@ -1,4 +1,4 @@
-### Python sort namedtuple
+### python sort namedtuple
 
 对于以下列表，试以分数进行递减排序
 ```python3

@@ -8,6 +8,6 @@ Student_list = [Student(name="Simon", score=99), Student(name="天津风", score
 ```
 
 ```python3
-Sorted(Student_list, key=lambda x: x.score, reverse = True)
+sorted(Student_list, key=lambda x: x.score, reverse = True)
 >>> [Student(name='Simon', score=99), Student(name='Charlie', score=98), Student(name='天津风', score=97), Student(name='il harper', score=-7)]
 ```

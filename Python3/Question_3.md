@@ -10,7 +10,6 @@ copy_iter = iter(copy.deepcopy(my_test))
 ```
 
 ```python3
-
 >>> print(next(iterator))
 1
 >>> print(next(iter(my_test)))

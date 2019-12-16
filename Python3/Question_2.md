@@ -1,4 +1,4 @@
-## Sorted two sum
+### Sorted two sum
 
 给一个**已经排序**的整数数组，找到两个数使得他们的和等于一个给定的数target。
 

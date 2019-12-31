@@ -1,4 +1,4 @@
-# DFS array problems zoo
+# Combination&permutation problems zoo
 ## Combination
 ```python3
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
@@ -304,24 +304,19 @@ class Solution:
             if target < 0:
                 return
             for i in range(index, len(candidates)):
-                if not visited[i]:
-                    if i > index and not visited[i-1] and candidates[i-1] == candidates[i]:
+                if i > index and candidates[i-1] == candidates[i]:
                         continue
-                        
-                    visited[i] = True
-                    dfs(path + [candidates[i]], i+1, target-candidates[i])
-                    visited[i] = False
+                dfs(path + [candidates[i]], i+1, target-candidates[i])
         
         res = []
-        visited = [False]*len(candidates)
         candidates.sort()
         dfs([], 0, target)
         return res
 ```
-## 总结
+## 技 术 总 结
 * 对于要求输出先后顺序的题目，应该用index方法来解决，如Subsets，Combination Sum
 * index: i 和 i+1: 如果可以重复利用nums，则使用i，否则使用i+1, 可以对比Subsets和Combination Sum
-* 对于不要求输出先后顺序的题目，应该用nums[:i]+nums[i+1:]或visited array来解决
+* 对于不要求输出先后顺序的题目，应该用nums[:i]+nums[i+1:]或visited array来解决。如permutation
 
 
 

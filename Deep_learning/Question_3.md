@@ -7,3 +7,4 @@
 * Choose simplier model
 * Pooling
 * Collect more data
+* Batch normalization

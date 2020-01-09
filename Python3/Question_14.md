@@ -20,7 +20,7 @@ return its level order traversal as:
 ```
 
 🎉 Answer
-```
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
